@@ -1,0 +1,44 @@
+#-------------------------------------------------------------------------------------------------
+
+spring:
+  application:
+    name: Automated tests for FTB app
+  profiles:
+    active: '@activeSpringProfiles@'
+    default: "lcl"
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myDb
+    username: ${DEFINE IN A PROPER PROFILE}
+    password: ${DEFINE IN A PROPER PROFILE}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+y
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+
+# Mostly env-specific and re-usable existing test data like a special user account for auto-tests only etc.
+data:
+  app:
+    host: localhost
+    port: 8080
+    gui:
+      login: /login
+    api:
+      rest:
+        root: /api
+        version: /v0
+  admin:
+    login: john
+    password: {{DO NOT STORE SENSITIVE DATA in Git: passwords, CreditCard numbers etc}}
+  agent:
+    login: mike
+    password: {{DO NOT STORE SENSITIVE DATA in Git: passwords, CreditCard numbers etc}}
