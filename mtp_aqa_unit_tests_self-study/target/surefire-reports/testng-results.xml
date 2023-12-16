@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-16T14:23:00 MSK" name="Surefire suite" finished-at="2023-12-16T14:23:00 MSK" duration-ms="41">
+    <groups>
+      <group name="SMOKE">
+        <method signature="TextUtilTestNgTest.toLowerCaseTest()[pri:0, instance:app.TextUtilTestNgTest@17695df3]" name="toLowerCaseTest" class="app.TextUtilTestNgTest"/>
+      </group> <!-- SMOKE -->
+      <group name="TEXTUTIL">
+        <method signature="TextUtilTestNgTest.toLowerCaseTest()[pri:0, instance:app.TextUtilTestNgTest@17695df3]" name="toLowerCaseTest" class="app.TextUtilTestNgTest"/>
+      </group> <!-- TEXTUTIL -->
+    </groups>
+    <test started-at="2023-12-16T14:23:00 MSK" name="Surefire test" finished-at="2023-12-16T14:23:00 MSK" duration-ms="41">
+      <class name="app.TextUtilTestNgTest">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:app.TextUtilTestNgTest@17695df3]" started-at="2023-12-16T14:23:00 MSK" name="setupClass" finished-at="2023-12-16T14:23:00 MSK" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:app.TextUtilTestNgTest@17695df3]" started-at="2023-12-16T14:23:00 MSK" name="setupMethod" finished-at="2023-12-16T14:23:00 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="toLowerCaseTest()[pri:0, instance:app.TextUtilTestNgTest@17695df3]" started-at="2023-12-16T14:23:00 MSK" name="toLowerCaseTest" description="A simple test for #toLowerCase()" finished-at="2023-12-16T14:23:00 MSK" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLowerCaseTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:app.TextUtilTestNgTest@17695df3]" started-at="2023-12-16T14:23:00 MSK" name="tearDown" finished-at="2023-12-16T14:23:00 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- app.TextUtilTestNgTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
